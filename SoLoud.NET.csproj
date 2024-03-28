@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <Title>SoLoud.NET</Title>
+        <Authors>dungeonneko, Pannoniae</Authors>
+        <Description>A SoLoud wrapper for .NET.</Description>
+        <RootNamespace>SoLoud</RootNamespace>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageVersion>2020.2.7.1</PackageVersion>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/Pannoniae/SoLoud.NET</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="README.md" Pack="true" PackagePath="/">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="./libsoloud.so" Pack="true" PackagePath="runtimes/linux-x64/native/">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="./soloud.dll" Pack="true" PackagePath="runtimes/win-x64/native/">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+</Project>
