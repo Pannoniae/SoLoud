@@ -4,7 +4,7 @@
 
 ### Make nuget package
 
-`dotnet pack SoLoud.NET.csproj -p:NuspecFile=.nuspec`
+`dotnet pack SoLoud.NET.csproj
 
 ### How to use
 
